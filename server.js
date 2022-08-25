@@ -2,7 +2,7 @@ const express=require('express');
 const cors=require('cors');
 const app=express();
 var corsOptions={
-    origin:"http://localhost:4200"
+    origin:["http://localhost:4200","http://localhost:3000"]
 }
 app.use(cors(corsOptions));
 app.use(express.json());
